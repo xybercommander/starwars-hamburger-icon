@@ -44,13 +44,19 @@ body {
     transition: all .7s ease-in-out;
 }
 
-.light-saber1, .light-saber2 {
+.light-saber1, .light-saber2, .light-saber3 {
     display: flex;
     width: 51px;
     justify-content: space-between;
     transition: all .7s ease-in-out;
 }
 
+.light-saber1 {
+    margin-bottom: 8px;
+}
+.light-saber3 {
+    margin-top: 8px;
+}
 
 .line1 {
     width: 38px;
@@ -60,7 +66,7 @@ body {
     box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
     transition: all .7s ease-in-out;
 
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
 }
 
 .line2 {
@@ -73,14 +79,14 @@ body {
 }
 
 .line3 {
-    width: 50px;
+    width: 38px;
     height: 5px;
     background: white;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
     transition: all .7s ease-in-out;
 
-    margin-top: 8px;
+    /* margin-top: 8px; */
 }
 
 /* Zoom is for the Hovering effect */
@@ -93,13 +99,8 @@ body {
 ANIMATION
 ***************** */
 
-.menu-button.open .line3 {
-    transform: scale(0) translateY(90px);
-    box-shadow: none;
-}
-
 .menu-button.open .light-saber1 {
-    transform: rotate(405deg) translate(8px, 11px);
+    transform: rotate(405deg) translate(10px, 11px);
 }
 .menu-button.open .line1 {
     background-color: rgb(2, 230, 2);
@@ -113,6 +114,15 @@ ANIMATION
 .menu-button.open .line2 {
     background-color: rgb(223, 2, 2);
     box-shadow: 0px 0px 6px rgb(255, 58, 58);
+}
+
+.menu-button.open .light-saber3 {
+    transform: scale(0);
+    box-shadow: none;
+}
+.menu-button.open .line3 {
+    background-color: rgb(21, 130, 255);
+    box-shadow: 0px 0px 6px rgb(51, 237, 250);
 }
 
 /* Hovering effect*/
