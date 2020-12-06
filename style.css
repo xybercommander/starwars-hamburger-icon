@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    background: #272727;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.menu-bg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+}
+
+.menu-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+
+/* .menu-btn_burger {
+    width: 50px;
+    height: 6px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    transition: all .5s ease-in-out;
+} */
+
+.handle {
+    width: 11px;
+    height: 5px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    transition: all .7s ease-in-out;
+}
+
+.light-saber1 {
+    display: flex;
+    width: 51px;
+    justify-content: space-between;
+    transition: all .7s ease-in-out;
+}
+
+.line1 {
+    width: 38px;
+    height: 5px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    transition: all .7s ease-in-out;
+
+    margin-bottom: 8px;
+}
+
+.light-saber2 {
+    display: flex;
+    width: 51px;
+    justify-content: space-between;
+    transition: all .7s ease-in-out;
+}
+
+.line2 {
+    width: 38px;
+    height: 5px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    transition: all .7s ease-in-out;
+}
+
+.line3 {
+    width: 50px;
+    height: 5px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    transition: all .7s ease-in-out;
+
+    margin-top: 8px;
+}
+
+.zoom {
+    transition: all .5s ease;
+}
+
+
+/* Animation */
+
+.menu-button.open .line3 {
+    transform: translateY(13px);
+    background-color: #ffe81f;
+    /* background: transparent; */
+    box-shadow: none;
+}
+
+.menu-button.open .light-saber1 {
+    transform: rotate(765deg) translate(4px, 6px);
+}
+.menu-button.open .line1 {
+    background-color: rgb(2, 230, 2);
+    box-shadow: 0px 0px 6px rgb(87, 255, 87);
+
+}
+
+.menu-button.open .light-saber2 {
+    transform: rotate(-765deg) translate(1px, -5px);
+}
+.menu-button.open .line2 {
+    background-color: rgb(223, 2, 2);
+    box-shadow: 0px 0px 6px rgb(255, 58, 58);
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+    box-shadow: 20px 20px 10px rgb(26, 24, 24);
+}
